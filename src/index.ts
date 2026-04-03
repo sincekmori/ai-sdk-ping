@@ -49,6 +49,7 @@ export const ping = async (
 			prompt: "Say this is a test.",
 			maxRetries: 0,
 			abortSignal: abortController.signal,
+			onError: () => {},
 			...options,
 		});
 
